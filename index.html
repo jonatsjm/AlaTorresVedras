@@ -1,299 +1,261 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>195ª Conferência Geral - Feedbacks</title>
-    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Fak-xU3qNBYVs5vzUQrt7eBxxPUhsL0I-Rbq9eul2Fc2uhL5nk2ei3IRGpECwtO4-2m87o0hfKxvKENkZ4zvCWaIA1i-OSrPrNVeVETwTarpw7XIkLYeKbgG8K_Wow4d0rtBlqXToich9GS0UlW5X9svBgZ3gotkwPmTAEIp6z_IMZ5iZM4AL6kFyuRA_LDJFQVd1XdCGKo_FGy_NwEBe_QOUuNFGtcvb5Qak37qVluG6pB1bGURdmbGskZJMHC691VnEdfxtuTDcWOlH2nRUj4mOLHJUZgJpoM66k2Tz7Myd6cekR9mcjd-zc6b7DflmVjvk3h3JDIoXqbtibm-oSj0OMATacYAdr7mcBqNzEE_w9YyZ9sCb8bbBodbpbZgY4FyEA9CS2FcOce5fQGq7Q" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9wYTAwMi1uYi5hYmFjdXMuYWkvbm90ZWJvb2stbWV0YXNlcnZpY2Uvbm90ZWJvb2svZG93bmxvYWROb3RlYm9va0ZpbGU_ZGVwbG95bWVudElkPWQxYWExN2IwMiZkZXBsb3ltZW50Q29udmVyc2F0aW9uSWQ9MTBlYzAyODhkNCZmaWxlUGF0aD0lMmZtdXJhbF9jb25mZXJlbmNpYV9nZXJhbC5odG1sJnYyRmlsZXNEaXI9dHJ1ZSZ2MkZpbGVzUGF0aD10cnVlJm9yZ2FuaXphdGlvbklkPWJkZTMxYjExMCZoYXNoZWRDb252ZXJzYXRpb25Pd25lclVzZXJJZD05ZWEyYzI1MjQ"/><style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-            padding: 40px 30px;
-            color: #1e293b;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-            color: white;
-            padding: 50px 40px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: pulse 15s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1) rotate(0deg); }
-            50% { transform: scale(1.1) rotate(180deg); }
-        }
-        
-        .header-content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .header h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            line-height: 1.2;
-        }
-        
-        .header .subtitle {
-            font-size: 20px;
-            margin-bottom: 10px;
-            opacity: 0.95;
-            font-weight: 300;
-        }
-        
-        .header .date {
-            font-size: 18px;
-            opacity: 0.9;
-            font-style: italic;
-            margin-top: 10px;
-        }
-        
-        .header .location {
-            font-size: 22px;
-            margin-top: 20px;
-            font-weight: 600;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 10px 30px;
-            border-radius: 30px;
-            display: inline-block;
-        }
-        
-        .banner-image {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-            display: block;
-        }
-        
-        .intro {
-            background: linear-gradient(to right, #eff6ff, #dbeafe);
-            padding: 40px;
-            text-align: center;
-            border-bottom: 4px solid #2563eb;
-        }
-        
-        .intro p {
-            font-size: 20px;
-            color: #1e40af;
-            font-weight: 500;
-            line-height: 1.6;
-        }
-        
-        .content {
-            padding: 50px 40px;
-            background: #fafafa;
-        }
-        
-        .feedback-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 30px;
-            margin-top: 20px;
-        }
-        
-        .feedback-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-left: 5px solid #2563eb;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-        }
-        
-        .feedback-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-        
-        .feedback-card::before {
-            content: '"';
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            font-size: 60px;
-            color: #dbeafe;
-            font-family: Georgia, serif;
-            line-height: 1;
-        }
-        
-        .feedback-name {
-            font-size: 22px;
-            font-weight: bold;
-            color: #1e3a8a;
-            margin-bottom: 15px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .feedback-text {
-            font-size: 16px;
-            line-height: 1.7;
-            color: #475569;
-            text-align: justify;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .footer {
-            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        
-        .footer p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-        
-        .footer .verse {
-            font-style: italic;
-            font-size: 16px;
-            opacity: 0.9;
-            margin-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-            padding-top: 20px;
-        }
-        
-        @media print {
-            body {
-                padding: 0;
-            }
-            .feedback-card:hover {
-                transform: none;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .feedback-grid {
-                grid-template-columns: 1fr;
-            }
-            .header h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>195ª Conferência Geral - Feedbacks</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://pt.thechurchnews.com" crossorigin>
+  <link rel="dns-prefetch" href="//pt.thechurchnews.com">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; } /* rolagem suave */
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      padding: 40px 30px;
+      color: #1e293b;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* NAVBAR FIXA */
+    .navbar {
+      position: fixed;
+      top: 10px;               /* desloca ligeiramente para baixo para o fundo aparecer */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      background: rgba(17, 24, 39, 0.85); /* azul-escuro translúcido */
+      color: #fff;
+      backdrop-filter: blur(6px);
+      border-radius: 999px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      padding: 10px 16px;
+    }
+    .nav-list {
+      display: flex;
+      gap: 14px;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-link {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      transition: background .2s ease, color .2s ease;
+      white-space: nowrap;
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+      background: rgba(255,255,255,.15);
+      color: #fff;
+      outline: none;
+    }
+
+    /* Espaço para não sobrepor o topo ao clicar nas âncoras */
+    .anchor-offset {
+      scroll-margin-top: 90px; /* igual ou maior que altura visual da navbar */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.3);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      color: #fff;
+      padding: 50px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: "";
+      position: absolute;
+      inset: -50%;
+      background: radial-gradient(circle, rgba(255,255,255,.1) 0%, transparent 70%);
+      animation: pulse 15s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.1) rotate(180deg); }
+    }
+    .header-content { position: relative; z-index: 1; }
+    .header h1 { font-size: 42px; margin-bottom: 15px; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,.3); line-height: 1.2; }
+    .header .subtitle { font-size: 20px; margin-bottom: 10px; opacity: .95; font-weight: 300; }
+    .header .date { font-size: 18px; opacity: .9; font-style: italic; margin-top: 10px; }
+    .header .location {
+      font-size: 22px; margin-top: 20px; font-weight: 600;
+      background: rgba(255,255,255,.2); padding: 10px 30px; border-radius: 30px; display: inline-block;
+    }
+
+    .banner-image { width: 100%; height: 350px; object-fit: cover; display: block; }
+
+    .intro {
+      background: linear-gradient(to right, #eff6ff, #dbeafe);
+      padding: 40px; text-align: center; border-bottom: 4px solid #2563eb;
+    }
+    .intro p { font-size: 20px; color: #1e40af; font-weight: 500; line-height: 1.6; }
+
+    .content { padding: 50px 40px; background: #fafafa; }
+
+    .feedback-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px; margin-top: 20px;
+    }
+    .feedback-card {
+      background: #fff; border-radius: 15px; padding: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.1);
+      border-left: 5px solid #2563eb;
+      transition: transform .3s ease, box-shadow .3s ease;
+      position: relative;
+    }
+    .feedback-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,.15); }
+    .feedback-card::before {
+      content: "“";
+      position: absolute; top: 15px; left: 15px;
+      font-size: 60px; color: #dbeafe; font-family: Georgia, serif; line-height: 1;
+    }
+    .feedback-name { font-size: 20px; font-weight: 700; color: #1e3a8a; margin-bottom: 12px; }
+    .feedback-text { font-size: 16px; line-height: 1.7; color: #475569; text-align: justify; }
+
+    .footer {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      color: #fff; padding: 40px; text-align: center;
+    }
+    .footer p { font-size: 18px; line-height: 1.6; margin-bottom: 10px; }
+    .footer .verse {
+      font-style: italic; font-size: 16px; opacity: .9; margin-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.3); padding-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 20px 12px; }
+      .navbar { top: 6px; padding: 8px 12px; }
+      .nav-link { font-size: 13px; padding: 7px 10px; }
+      .header h1 { font-size: 32px; }
+      .banner-image { height: 240px; }
+    }
+    @media (max-width: 380px) {
+      .header h1 { font-size: 26px; }
+      .feedback-card { padding: 20px; }
+      .feedback-text { font-size: 15px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="header-content">
-                <h1>195ª Conferência Geral Semestral</h1>
-                <div class="subtitle">A Igreja de Jesus Cristo dos Santos dos Últimos Dias</div>
-                <div class="date">4 e 5 de Outubro de 2025</div>
-                <div class="location">🌟 Ala Torres Vedras 🌟</div>
-            </div>
-        </div>
-        
-        <img src="https://pt.thechurchnews.com/resizer/v2/LW2EYX3CX5HF7IB55TS6IMUNQE.JPG?auth=b79d5991398687b15d19cbf30bab54b6aa0194ce5ab1ca897d9334ef7500a8ed&focal=0%2C0&width=800&height=533" alt="Conferência Geral" class="banner-image">
-        
-        <div class="intro">
-            <p><strong>Testemunhos e Inspirações dos Nossos Membros</strong></p>
-        </div>
-        
-        <div class="content">
-            <div class="feedback-grid">
-                <div class="feedback-card">
-                    <div class="feedback-name">Woolley</div>
-                    <div class="feedback-text">Amei tanto o discurso do Presidente Oaks sobre a importância da família. Gostei também da história sobre "Oma".</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Joyce Filardo</div>
-                    <div class="feedback-text">Foi um banquete espiritual, cada palavra dita. Hoje eu sei que esse é o verdadeiro evangelho de Jesus Cristo e como é importante a Ministração.</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Chelsey Woolley</div>
-                    <div class="feedback-text">A música era maravilhosa também!</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Maria João Pereira Ângelo</div>
-                    <div class="feedback-text">O incentivo para o arrependimento é que ele está ainda ao alcance de todas as pessoas que ainda queiram se converter. Castidade e recato.</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Steven Woolley</div>
-                    <div class="feedback-text">A importância de sermos pacificadores no coração, em casa e na comunidade, e a importância de passarmos tempo de qualidade junto com a nossa família!</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Cristina Araújo</div>
-                    <div class="feedback-text">Esta conferência me testificou mais fortemente que essa é a igreja de Cristo. Renovou minha esperança, minha fé e meu testemunho.</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Josilelho Evangelista da Silva</div>
-                    <div class="feedback-text">As palavras do Presidente Jeffrey Holland foram como um canto de Isaías, Jeová é salvação. Amém.</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Justino Teresinha Carmelina</div>
-                    <div class="feedback-text">Receber respostas às nossas orações por meio dos profetas modernos seguindo o exemplo de Jesus Cristo.</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Bispo Gabriel Brinço</div>
-                    <div class="feedback-text">A cada Conferência Geral, sinto meu testemunho crescer. Quando ouço a voz do profeta, dos apóstolos e líderes gerais, sinto claramente que as palavras deles vêm do céu, inspiradas pelo Espírito. Elas tocam o meu coração e me lembram que o Senhor realmente guia a Sua Igreja hoje. Agora, o meu desafio será reler, estudar e refletir sobre cada discurso ao longo dos próximos seis meses, para sentir novamente o mesmo Espírito que senti ao assistir à conferência. Sei que isso é o que o Senhor deseja para nós — que nos esforcemos para aplicar os ensinamentos em nossa vida e em nossas famílias. Sou muito grato por ser membro da Igreja e por receber orientação do Senhor através de Seus servos escolhidos. Ouvir a Sua palavra e colocá-la em prática traz paz, força e uma felicidade verdadeira que o mundo não pode dar.</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Moses Woolley</div>
-                    <div class="feedback-text">Eu gostei tanto da Conferência Geral, especialmente o profundo amor que Deus tem por mim que consegui sentir através de Seus servos. Os discursos que mais gostei foram os de: Presidente Dallin H. Oaks, Élder Ronald A. Rasband, Élder Brik V. Eyre, Irmã J. Anette Dennis e Élder Kevin G. Brown.</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Ariane</div>
-                    <div class="feedback-text">Foi maravilhosa, os temas foram inspiradores e profundos.</div>
-                </div>
-                
-                <div class="feedback-card">
-                    <div class="feedback-name">Jonat Marques</div>
-                    <div class="feedback-text">Assisti às sessões da 195ª Conferência Geral com o coração cheio. Senti paz profunda, esperança realista e um convite amoroso ao arrependimento diário. A ênfase em seguir o Salvador, fortalecer a fé em Jesus Cristo e cuidar dos que sofrem tocou-me de modo especial. Gostei particularmente dos testemunhos simples e poderosos sobre a revelação pessoal e sobre como o Senhor conhece cada um de nós pelo nome. As mensagens sobre família, serviço e santidade no lar inspiraram-me a ser mais intencional nas pequenas coisas — oração, estudo das escrituras e bondade constante. A música elevou o espírito e uniu o sentimento do conjunto: Cristo é o centro, e n'Ele encontramos consolo e direção. Saí renovado, com metas claras e o desejo de viver com mais propósito e caridade.</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer">
-            <p><strong>"E agora, meus amados irmãos, sei que essas são palavras de grande severidade;</strong></p>
-            <p><strong>não obstante, são palavras verdadeiras e necessito falar-vos."</strong></p>
-            <div class="verse">— 2 Néfi 9:40</div>
-            <p style="margin-top: 30px; font-size: 16px;">✨ Ala Torres Vedras ✨</p>
-        </div>
-    </div>
+  <!-- NAVBAR -->
+  <nav class="navbar" aria-label="Navegação principal">
+    <ul class="nav-list">
+      <li><a class="nav-link" href="#inicio">Início</a></li>
+      <li><a class="nav-link" href="#testemunhos">Testemunhos</a></li>
+      <li><a class="nav-link" href="#rodape">Rodapé</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header id="inicio" class="header anchor-offset">
+      <div class="header-content">
+        <h1>195ª Conferência Geral Semestral</h1>
+        <div class="subtitle">A Igreja de Jesus Cristo dos Santos dos Últimos Dias</div>
+        <div class="date">4 e 5 de Outubro de 2025</div>
+        <div class="location">🌟 Ala Torres Vedras 🌟</div>
+      </div>
+    </header>
+
+    <img
+      src="https://pt.thechurchnews.com/resizer/v2/LW2EYX3CX5HF7IB55TS6IMUNQE.JPG?auth=b79d5991398687b15d19cbf30bab54b6aa0194ce5ab1ca897d9334ef7500a8ed&focal=0,0&width=1200&height=500"
+      width="1200" height="500" alt="Conferência Geral" class="banner-image" loading="lazy">
+
+    <section class="intro">
+      <p><strong>Testemunhos e Inspirações dos Nossos Membros</strong></p>
+    </section>
+
+    <main id="testemunhos" class="content anchor-offset">
+      <div class="feedback-grid">
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Woolley</h2>
+          <p class="feedback-text">Amei tanto o discurso do Presidente Oaks sobre a importância da família. Gostei também da história sobre "Oma".</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Joyce Filardo</h2>
+          <p class="feedback-text">Foi um banquete espiritual, cada palavra dita. Hoje eu sei que esse é o verdadeiro evangelho de Jesus Cristo e como é importante a Ministração.</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Chelsey Woolley</h2>
+          <p class="feedback-text">A música era maravilhosa também!</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Maria João Pereira Ângelo</h2>
+          <p class="feedback-text">O incentivo para o arrependimento é que ele está ainda ao alcance de todas as pessoas que ainda queiram se converter. Castidade e recato.</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Steven Woolley</h2>
+          <p class="feedback-text">A importância de sermos pacificadores no coração, em casa e na comunidade, e a importância de passarmos tempo de qualidade junto com a nossa família!</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Cristina Araújo</h2>
+          <p class="feedback-text">Esta conferência me testificou mais fortemente que essa é a igreja de Cristo. Renovou minha esperança, minha fé e meu testemunho.</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Josilelho Evangelista da Silva</h2>
+          <p class="feedback-text">As palavras do Presidente Jeffrey Holland foram como um canto de Isaías, Jeová é salvação. Amém.</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Justino Teresinha Carmelina</h2>
+          <p class="feedback-text">Receber respostas às nossas orações por meio dos profetas modernos seguindo o exemplo de Jesus Cristo.</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Bispo Gabriel Brinço</h2>
+          <p class="feedback-text">A cada Conferência Geral, sinto meu testemunho crescer. Quando ouço a voz do profeta, dos apóstolos e líderes gerais, sinto claramente que as palavras deles vêm do céu, inspiradas pelo Espírito. Elas tocam o meu coração e me lembram que o Senhor realmente guia a Sua Igreja hoje. Agora, o meu desafio será reler, estudar e refletir sobre cada discurso ao longo dos próximos seis meses, para sentir novamente o mesmo Espírito que senti ao assistir à conferência. Sei que isso é o que o Senhor deseja para nós — que nos esforcemos para aplicar os ensinamentos em nossa vida e em nossas famílias. Sou muito grato por ser membro da Igreja e por receber orientação do Senhor através de Seus servos escolhidos. Ouvir a Sua palavra e colocá-la em prática traz paz, força e uma felicidade verdadeira que o mundo não pode dar.</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Moses Woolley</h2>
+          <p class="feedback-text">Eu gostei tanto da Conferência Geral, especialmente o profundo amor que Deus tem por mim que consegui sentir através de Seus servos. Os discursos que mais gostei foram os de: Presidente Dallin H. Oaks, Élder Ronald A. Rasband, Élder Brik V. Eyre, Irmã J. Anette Dennis e Élder Kevin G. Brown.</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Ariane</h2>
+          <p class="feedback-text">Foi maravilhosa, os temas foram inspiradores e profundos.</p>
+        </article>
+
+        <article class="feedback-card">
+          <h2 class="feedback-name">Jonat Marques</h2>
+          <p class="feedback-text">Assisti às sessões da 195ª Conferência Geral com o coração cheio. Senti paz profunda, esperança realista e um convite amoroso ao arrependimento diário. A ênfase em seguir o Salvador, fortalecer a fé em Jesus Cristo e cuidar dos que sofrem tocou-me de modo especial. Gostei particularmente dos testemunhos simples e poderosos sobre a revelação pessoal e sobre como o Senhor conhece cada um de nós pelo nome. As mensagens sobre família, serviço e santidade no lar inspiraram-me a ser mais intencional nas pequenas coisas — oração, estudo das escrituras e bondade constante. A música elevou o espírito e uniu o sentimento do conjunto: Cristo é o centro, e n'Ele encontramos consolo e direção. Saí renovado, com metas claras e o desejo de viver com mais propósito e caridade.</p>
+        </article>
+
+      </div>
+    </main>
+
+    <footer id="rodape" class="footer anchor-offset">
+      <p><strong>"E agora, meus amados irmãos, sei que essas são palavras de grande severidade;</strong></p>
+      <p><strong>não obstante, são palavras verdadeiras e necessito falar-vos."</strong></p>
+      <div class="verse">— 2 Néfi 9:40</div>
+      <p style="margin-top: 30px; font-size: 16px;">✨ Ala Torres Vedras ✨</p>
+    </footer>
+  </div>
 </body>
 </html>
